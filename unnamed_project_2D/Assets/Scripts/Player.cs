@@ -7,14 +7,17 @@ public class Player : BaseScript
     private Rigidbody2D rb;
 
   
-    [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float moveSpeed;
     [SerializeField] private float maxMoveSpeed = 10f;
     [SerializeField] private float acceleration = 2f;
-    [SerializeField] private float deceleration = 3f;
+    [SerializeField] private float deceleration = 4f;
     [SerializeField] private bool canmove = true;  
     [SerializeField] private float time;
     private float xInput;
     private bool isMoving = false;
+    private int facingDirection = 1;
+    private bool isFacingRight = true;
+    
 
     private void Start()
     {
@@ -28,6 +31,7 @@ public class Player : BaseScript
         HandleMovement();
         AttemptAttack();
         HandleAnimations();
+        HandleFlip();
     }
     protected virtual void AttemptAttack()
     {
@@ -47,20 +51,25 @@ public class Player : BaseScript
     }
     private void HandleMovement()
     { 
+    
         if( canmove == true && xInput != 0)
         { 
         isMoving = true;
-        moveSpeed += acceleration * Time.deltaTime;
+        for( float i = moveSpeed;i < maxMoveSpeed; i+= acceleration * Time.deltaTime)
+            {
+                rb.linearVelocity = new Vector2(xInput * i , rb.linearVelocity.y);
+                moveSpeed = i;
+            }
         }
         else if (xInput == 0 && isMoving == true)
-        {   moveSpeed -= deceleration * Time.deltaTime;
+        {   for ( float j = moveSpeed; j > 0; j -= deceleration * Time.deltaTime)
+            {
+                rb.linearVelocity = new Vector2(xInput * j, rb.linearVelocity.y);
+            }
             isMoving = false;
         }
-    }
-
-    void FixedUpdate()
-    {
-        rb.linearVelocity  = new Vector2(Mathf.Clamp(xInput * moveSpeed, -maxMoveSpeed, maxMoveSpeed), rb.linearVelocity.y);
+        
+        
     }
 
     protected void HandleAnimations()
@@ -71,4 +80,22 @@ public class Player : BaseScript
     
     }
 
+protected virtual void HandleFlip()
+    {   
+        if (rb.linearVelocity.x > 0 && isFacingRight==false)
+        {
+            Flip();
+        }
+        else if (rb.linearVelocity.x < 0 && isFacingRight==true)
+        {
+            Flip();
+        }
+    }
+private void Flip()
+    {
+        facingDirection = facingDirection * -1;
+        transform.Rotate(0,180,0);
+        isFacingRight = !isFacingRight;
+    }
+    
 }

@@ -7,7 +7,12 @@ public class BaseScript : MonoBehaviour
     [SerializeField]protected Transform attackPoint;
     [SerializeField]protected float attackRadious;
     [SerializeField]protected LayerMask whatisTarget;
-    
+
+    private Rigidbody2D rb;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     public void damageTarget()
     {
@@ -31,7 +36,7 @@ public class BaseScript : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRadious);
     }
-
-    
 }
+
+
 

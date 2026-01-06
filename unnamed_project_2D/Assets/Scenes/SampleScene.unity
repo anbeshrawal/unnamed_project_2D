@@ -853,7 +853,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   moveSpeed: 1
-  maxMoveSpeed: 10
+  maxMoveSpeed: 6
   acceleration: 2
   deceleration: 3
   canmove: 1
