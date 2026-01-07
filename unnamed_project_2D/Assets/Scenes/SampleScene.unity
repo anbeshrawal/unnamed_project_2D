@@ -852,10 +852,10 @@ MonoBehaviour:
   whatisTarget:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 1
-  maxMoveSpeed: 6
-  acceleration: 2
-  deceleration: 3
+  moveSpeed: {x: 0, y: 0}
+  maxMoveSpeed: 10
+  acceleration: 3
+  deceleration: 8.5
   canmove: 1
   time: 0
 --- !u!1 &2031164983

@@ -1,16 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using Unity.VisualScripting;
+using System;
 public class Player : BaseScript
 {
     private Animator pAnimator;
     private Rigidbody2D rb;
 
   
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private Vector2 moveSpeed;
     [SerializeField] private float maxMoveSpeed = 10f;
-    [SerializeField] private float acceleration = 2f;
-    [SerializeField] private float deceleration = 4f;
+    [SerializeField] private float acceleration = 3f;
+    [SerializeField] private float deceleration = 5f;
     [SerializeField] private bool canmove = true;  
     [SerializeField] private float time;
     private float xInput;
@@ -23,7 +25,7 @@ public class Player : BaseScript
     {
         pAnimator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        time = Time.deltaTime;
+        
     }
     private void Update()
     {
@@ -32,6 +34,7 @@ public class Player : BaseScript
         AttemptAttack();
         HandleAnimations();
         HandleFlip();
+        time = Time.deltaTime;
     }
     protected virtual void AttemptAttack()
     {
@@ -39,9 +42,13 @@ public class Player : BaseScript
         {
             pAnimator.SetTrigger("attack1");
             Debug.Log("Player Attack!");
+            canmove = false;
             
         }
-        
+        else
+        {
+            canmove = true;
+        }
     }
 
     private void HandleInput()
@@ -49,44 +56,36 @@ public class Player : BaseScript
         xInput = Input.GetAxisRaw("Horizontal");
         //Debug.Log("Player: HandleInput called " + xInput);
     }
+
+    #region Movement
     private void HandleMovement()
     { 
-    
+         HandleFlip();
         if( canmove == true && xInput != 0)
         { 
         isMoving = true;
-        for( float i = moveSpeed;i < maxMoveSpeed; i+= acceleration * Time.deltaTime)
-            {
-                rb.linearVelocity = new Vector2(xInput * i , rb.linearVelocity.y);
-                moveSpeed = i;
-            }
+        Vector2 targetVelocity = new Vector2(xInput, 0) * maxMoveSpeed;
+        moveSpeed = Vector2.Lerp(moveSpeed, targetVelocity, acceleration * Time.deltaTime); 
+        rb.linearVelocity = new Vector2(moveSpeed.x, rb.linearVelocity.y);
+        
+        
         }
         else if (xInput == 0 && isMoving == true)
-        {   for ( float j = moveSpeed; j > 0; j -= deceleration * Time.deltaTime)
-            {
-                rb.linearVelocity = new Vector2(xInput * j, rb.linearVelocity.y);
-            }
-            isMoving = false;
-        }
-        
-        
+        {   
+        Vector2 targetVelocity = new Vector2(0, 0);
+        moveSpeed = Vector2.Lerp(moveSpeed, targetVelocity, deceleration * Time.deltaTime); 
+        rb.linearVelocity = new Vector2(moveSpeed.x, rb.linearVelocity.y);
+        }    
     }
 
-    protected void HandleAnimations()
-    {
-        //pAnimator.SetFloat("yVelocity", rb.linearVelocity.y);
-        pAnimator.SetFloat("xVelocity", rb.linearVelocity.x);
-        //pAnimator.SetBool("isGrounded", isGrounded);
-    
-    }
 
 protected virtual void HandleFlip()
     {   
-        if (rb.linearVelocity.x > 0 && isFacingRight==false)
+        if (moveSpeed.x > 0 && isFacingRight==false)
         {
             Flip();
         }
-        else if (rb.linearVelocity.x < 0 && isFacingRight==true)
+        else if (moveSpeed.x < 0 && isFacingRight==true)
         {
             Flip();
         }
@@ -97,5 +96,12 @@ private void Flip()
         transform.Rotate(0,180,0);
         isFacingRight = !isFacingRight;
     }
+  #endregion  
+    protected void HandleAnimations()
+    {
+        //pAnimator.SetFloat("yVelocity", rb.linearVelocity.y);
+        pAnimator.SetFloat("xVelocity", rb.linearVelocity.x);
+        //pAnimator.SetBool("isGrounded", isGrounded);
     
+    }
 }

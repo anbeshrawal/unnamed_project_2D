@@ -8,10 +8,9 @@ public class BaseScript : MonoBehaviour
     [SerializeField]protected float attackRadious;
     [SerializeField]protected LayerMask whatisTarget;
 
-    private Rigidbody2D rb;
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        Debug.Log("BaseScript: Start called");
     }
 
     public void damageTarget()
