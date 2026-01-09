@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 876390544}
   - component: {fileID: 876390543}
   - component: {fileID: 876390546}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,12 +852,18 @@ MonoBehaviour:
   whatisTarget:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: {x: 0, y: 0}
-  maxMoveSpeed: 10
+  groundDistance: 1.33
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 64
+  isGrounded: 0
   acceleration: 3
-  deceleration: 8.5
+  deceleration: 3
   canmove: 1
   time: 0
+  maxMoveSpeed: 6
+  velPower: 1
+  frictionAmount: 0.1
 --- !u!1 &2031164983
 GameObject:
   m_ObjectHideFlags: 0

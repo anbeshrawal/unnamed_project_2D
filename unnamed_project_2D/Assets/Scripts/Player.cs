@@ -9,16 +9,21 @@ public class Player : BaseScript
     private Rigidbody2D rb;
 
   
-    [SerializeField] private Vector2 moveSpeed;
-    [SerializeField] private float maxMoveSpeed = 10f;
+    //[SerializeField] private Vector2 moveSpeed;
     [SerializeField] private float acceleration = 3f;
-    [SerializeField] private float deceleration = 5f;
+    [SerializeField] private float deceleration = 3f;
     [SerializeField] private bool canmove = true;  
     [SerializeField] private float time;
     private float xInput;
     private bool isMoving = false;
     private int facingDirection = 1;
     private bool isFacingRight = true;
+    [SerializeField] private float maxMoveSpeed = 8f;
+    [SerializeField] private float velPower = 1.5f;
+    [SerializeField] private float frictionAmount = 0.1f;
+    private float move;
+
+    private float targetSpeed;
     
 
     private void Start()
@@ -30,7 +35,9 @@ public class Player : BaseScript
     private void Update()
     {
         HandleInput();
-        HandleMovement();
+        //HandleMovement();
+        CheckCollision();
+        movement();
         AttemptAttack();
         HandleAnimations();
         HandleFlip();
@@ -57,8 +64,41 @@ public class Player : BaseScript
         //Debug.Log("Player: HandleInput called " + xInput);
     }
 
+    private void FixedUpdate()
+    {
+        
+    }
+
     #region Movement
-    private void HandleMovement()
+    private void movement()
+    {   
+        if(canmove == true && isGrounded == true)
+        {
+        targetSpeed = xInput * maxMoveSpeed;
+        float speeddiff = targetSpeed - rb.linearVelocity.x;
+        float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
+        
+        if(targetSpeed == 0)
+        {
+            float amount = Mathf.Min(Mathf.Abs(rb.linearVelocity.x), Mathf.Abs(frictionAmount));
+            amount *= Mathf.Sign(rb.linearVelocity.x);
+            rb.AddForce(-amount * Vector2.right, ForceMode2D.Impulse);
+
+        }
+        else
+        {
+            move = Mathf.Pow(Mathf.Abs(speeddiff), velPower) * Mathf.Sign(speeddiff);
+
+            rb.AddForce(move * Vector2.right);
+        }
+        
+    }
+    }
+
+
+
+//old movement method
+    /*private void HandleMovement()
     { 
          HandleFlip();
         if( canmove == true && xInput != 0)
@@ -76,16 +116,16 @@ public class Player : BaseScript
         moveSpeed = Vector2.Lerp(moveSpeed, targetVelocity, deceleration * Time.deltaTime); 
         rb.linearVelocity = new Vector2(moveSpeed.x, rb.linearVelocity.y);
         }    
-    }
+    }*/
 
 
 protected virtual void HandleFlip()
     {   
-        if (moveSpeed.x > 0 && isFacingRight==false)
+        if (move > 0 && isFacingRight==false && targetSpeed !=0)
         {
             Flip();
         }
-        else if (moveSpeed.x < 0 && isFacingRight==true)
+        else if (move < 0 && isFacingRight==true && targetSpeed !=0)
         {
             Flip();
         }

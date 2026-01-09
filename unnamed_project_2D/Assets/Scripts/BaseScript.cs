@@ -1,12 +1,20 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class BaseScript : MonoBehaviour
 {
     [SerializeField]protected Transform attackPoint;
     [SerializeField]protected float attackRadious;
     [SerializeField]protected LayerMask whatisTarget;
+
+    [Header ("Collision")]
+    [SerializeField]protected float groundDistance;
+    [SerializeField]protected LayerMask whatisGround;
+    [SerializeField] protected bool isGrounded;
+
+
 
     private void Start()
     {
@@ -34,6 +42,21 @@ public class BaseScript : MonoBehaviour
             return;
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRadious);
+    }
+
+    protected void Collision()
+    {
+        Debug.Log("BaseScript: Collision called"); 
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundDistance));
+    }
+
+    protected void CheckCollision()
+    {
+        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundDistance, whatisGround);
     }
 }
 
