@@ -54,9 +54,10 @@ public class BaseScript : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundDistance));
     }
 
-    protected void CheckCollision()
+    protected virtual void CheckCollision()
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundDistance, whatisGround);
+
     }
 }
 
