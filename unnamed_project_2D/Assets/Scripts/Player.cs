@@ -11,6 +11,7 @@ public class Player : BaseScript
 {
     private Animator pAnimator;
     private Rigidbody2D rb;
+    [SerializeField]private SwordScriptJump swordScript;
 
     //[SerializeField] private Vector2 moveSpeed;
     //[SerializeField] private float acceleration = 3f;
@@ -27,7 +28,7 @@ public class Player : BaseScript
     [SerializeField] private float frictionAmount = 0.1f;
     [SerializeField] private float jumpSpeed = 7f;
     [SerializeField] private float SJF = 0.6f; // Second Jump Force multiplier
-    [SerializeField] private int jumpCount = 0;
+    [SerializeField] public int jumpCount = 0;
     [SerializeField]private bool canJump = false;
     [SerializeField] private int totaljumps = 2;
     private float move;
@@ -99,8 +100,13 @@ public class Player : BaseScript
                 }
         else if(jumpCount == 2)
         {                
-            transform.position = Vector2.MoveTowards(transform.position, edgePoint.transform.position, 3f);
+            if(swordScript.isStuck == true)
+            {
+            transform.position = Vector2.MoveTowards(transform.position, swordScript.getPoint, 5f);
             Debug.Log("Edge Jumped");
+            }
+            else 
+            { Debug.Log("No Edge to Jump");}
         } 
         
         }
