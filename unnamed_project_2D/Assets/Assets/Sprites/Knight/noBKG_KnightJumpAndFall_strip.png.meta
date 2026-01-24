@@ -1,37 +1,49 @@
 fileFormatVersion: 2
-guid: 774e0e36a7f1e4e87b9345b4b7957eaa
+guid: 21ed4ed2864f747cba425c020437fff4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6066306879103524113
-    second: _Death_0
+      213: 2165001038142686867
+    second: noBKG_KnightJumpAndFall_strip_0
   - first:
-      213: -2130260854859281059
-    second: _Death_1
+      213: -3323219810877477076
+    second: noBKG_KnightJumpAndFall_strip_1
   - first:
-      213: -8387844239704481345
-    second: _Death_2
+      213: -1275732480562838495
+    second: noBKG_KnightJumpAndFall_strip_2
   - first:
-      213: -5619066241937197591
-    second: _Death_3
+      213: -6974088986635383677
+    second: noBKG_KnightJumpAndFall_strip_3
   - first:
-      213: -2896604702546001214
-    second: _Death_4
+      213: 7819318548096920562
+    second: noBKG_KnightJumpAndFall_strip_4
   - first:
-      213: -4796269119335858697
-    second: _Death_5
+      213: 1949507891400082561
+    second: noBKG_KnightJumpAndFall_strip_5
   - first:
-      213: 5986346763916639630
-    second: _Death_6
+      213: 2511048077603649539
+    second: noBKG_KnightJumpAndFall_strip_6
   - first:
-      213: 2883202648186376338
-    second: _Death_7
+      213: 513507753970481495
+    second: noBKG_KnightJumpAndFall_strip_7
   - first:
-      213: -695858465623746701
-    second: _Death_8
+      213: 8278566502845999923
+    second: noBKG_KnightJumpAndFall_strip_8
   - first:
-      213: 7283540774101742664
-    second: _Death_9
+      213: -7022734580619261874
+    second: noBKG_KnightJumpAndFall_strip_9
+  - first:
+      213: 6344160088250257502
+    second: noBKG_KnightJumpAndFall_strip_10
+  - first:
+      213: 1235375693083715329
+    second: noBKG_KnightJumpAndFall_strip_11
+  - first:
+      213: 2282646019303360540
+    second: noBKG_KnightJumpAndFall_strip_12
+  - first:
+      213: 3917879321971269832
+    second: noBKG_KnightJumpAndFall_strip_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -166,221 +178,309 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Death_0
+      name: noBKG_KnightJumpAndFall_strip_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 0
-        width: 32
-        height: 40
+        x: 54
+        y: 19
+        width: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe2a68cb80620dba0800000000000000
-      internalID: -6066306879103524113
+      spriteID: 396c8d839f0ab0e10800000000000000
+      internalID: 2165001038142686867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_1
+      name: noBKG_KnightJumpAndFall_strip_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1
-        width: 31
-        height: 40
+        x: 198
+        y: 19
+        width: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5d41330a0bcf62e0800000000000000
-      internalID: -2130260854859281059
+      spriteID: c2f6b1e603d81e1d0800000000000000
+      internalID: -3323219810877477076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_2
+      name: noBKG_KnightJumpAndFall_strip_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 5
-        width: 34
-        height: 40
+        x: 342
+        y: 19
+        width: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb1ab1dca14689b80800000000000000
-      internalID: -8387844239704481345
+      spriteID: 124cf9b6110bb4ee0800000000000000
+      internalID: -1275732480562838495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_3
+      name: noBKG_KnightJumpAndFall_strip_3
       rect:
         serializedVersion: 2
-        x: 378
-        y: 6
-        width: 37
-        height: 40
+        x: 493
+        y: 21
+        width: 21
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e5b1f726011502b0800000000000000
-      internalID: -5619066241937197591
+      spriteID: 38c42a7540f073f90800000000000000
+      internalID: -6974088986635383677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_4
+      name: noBKG_KnightJumpAndFall_strip_4
       rect:
         serializedVersion: 2
-        x: 492
-        y: 0
-        width: 40
-        height: 40
+        x: 646
+        y: 25
+        width: 20
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c20502be513dc7d0800000000000000
-      internalID: -2896604702546001214
+      spriteID: 2fba0fc7accc38c60800000000000000
+      internalID: 7819318548096920562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_5
+      name: noBKG_KnightJumpAndFall_strip_5
       rect:
         serializedVersion: 2
-        x: 612
-        y: 0
-        width: 39
-        height: 40
+        x: 796
+        y: 32
+        width: 25
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fd7fcec5aa307db0800000000000000
-      internalID: -4796269119335858697
+      spriteID: 18409b9291b0e0b10800000000000000
+      internalID: 1949507891400082561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_6
+      name: noBKG_KnightJumpAndFall_strip_6
       rect:
         serializedVersion: 2
-        x: 732
-        y: 0
-        width: 39
-        height: 40
+        x: 949
+        y: 34
+        width: 25
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8d7f8d2aa6c31350800000000000000
-      internalID: 5986346763916639630
+      spriteID: 3083e772ce809d220800000000000000
+      internalID: 2511048077603649539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_7
+      name: noBKG_KnightJumpAndFall_strip_7
       rect:
         serializedVersion: 2
-        x: 852
-        y: 0
-        width: 41
-        height: 40
+        x: 1106
+        y: 33
+        width: 21
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2905d9c5881330820800000000000000
-      internalID: 2883202648186376338
+      spriteID: 759b1d0e498502700800000000000000
+      internalID: 513507753970481495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_8
+      name: noBKG_KnightJumpAndFall_strip_8
       rect:
         serializedVersion: 2
-        x: 972
-        y: 0
-        width: 43
-        height: 40
+        x: 1257
+        y: 27
+        width: 22
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3775c8e8960d756f0800000000000000
-      internalID: -695858465623746701
+      spriteID: 33b65936f5063e270800000000000000
+      internalID: 8278566502845999923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_9
+      name: noBKG_KnightJumpAndFall_strip_9
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 0
-        width: 43
-        height: 14
+        x: 1406
+        y: 24
+        width: 22
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84478638eb5541560800000000000000
-      internalID: 7283540774101742664
+      spriteID: e4846526b1c3a8e90800000000000000
+      internalID: -7022734580619261874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightJumpAndFall_strip_10
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 19
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e501e5accfbfa0850800000000000000
+      internalID: 6344160088250257502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightJumpAndFall_strip_11
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 19
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1072866c5afe42110800000000000000
+      internalID: 1235375693083715329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightJumpAndFall_strip_12
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 19
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c184988e5769daf10800000000000000
+      internalID: 2282646019303360540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightJumpAndFall_strip_13
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 19
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c022fa4c7a1f5630800000000000000
+      internalID: 3917879321971269832
       vertices: []
       indices: 
       edges: []
@@ -389,7 +489,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a651420c4728e4537b478f263f7e98c4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -399,16 +499,20 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      _Death_0: -6066306879103524113
-      _Death_1: -2130260854859281059
-      _Death_2: -8387844239704481345
-      _Death_3: -5619066241937197591
-      _Death_4: -2896604702546001214
-      _Death_5: -4796269119335858697
-      _Death_6: 5986346763916639630
-      _Death_7: 2883202648186376338
-      _Death_8: -695858465623746701
-      _Death_9: 7283540774101742664
+      noBKG_KnightJumpAndFall_strip_0: 2165001038142686867
+      noBKG_KnightJumpAndFall_strip_1: -3323219810877477076
+      noBKG_KnightJumpAndFall_strip_10: 6344160088250257502
+      noBKG_KnightJumpAndFall_strip_11: 1235375693083715329
+      noBKG_KnightJumpAndFall_strip_12: 2282646019303360540
+      noBKG_KnightJumpAndFall_strip_13: 3917879321971269832
+      noBKG_KnightJumpAndFall_strip_2: -1275732480562838495
+      noBKG_KnightJumpAndFall_strip_3: -6974088986635383677
+      noBKG_KnightJumpAndFall_strip_4: 7819318548096920562
+      noBKG_KnightJumpAndFall_strip_5: 1949507891400082561
+      noBKG_KnightJumpAndFall_strip_6: 2511048077603649539
+      noBKG_KnightJumpAndFall_strip_7: 513507753970481495
+      noBKG_KnightJumpAndFall_strip_8: 8278566502845999923
+      noBKG_KnightJumpAndFall_strip_9: -7022734580619261874
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

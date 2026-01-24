@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 774e0e36a7f1e4e87b9345b4b7957eaa
+guid: e56b4e87b5fb7402e90e929db3d79717
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6066306879103524113
-    second: _Death_0
+      213: 4642488333796919354
+    second: noBKG_KnightRun_strip_0
   - first:
-      213: -2130260854859281059
-    second: _Death_1
+      213: 495554865105711156
+    second: noBKG_KnightRun_strip_1
   - first:
-      213: -8387844239704481345
-    second: _Death_2
+      213: 2538924062860662314
+    second: noBKG_KnightRun_strip_2
   - first:
-      213: -5619066241937197591
-    second: _Death_3
+      213: 8279640131836260173
+    second: noBKG_KnightRun_strip_3
   - first:
-      213: -2896604702546001214
-    second: _Death_4
+      213: 8690424439161563917
+    second: noBKG_KnightRun_strip_4
   - first:
-      213: -4796269119335858697
-    second: _Death_5
+      213: 2414606530831258917
+    second: noBKG_KnightRun_strip_5
   - first:
-      213: 5986346763916639630
-    second: _Death_6
+      213: -7988999087367062319
+    second: noBKG_KnightRun_strip_6
   - first:
-      213: 2883202648186376338
-    second: _Death_7
-  - first:
-      213: -695858465623746701
-    second: _Death_8
-  - first:
-      213: 7283540774101742664
-    second: _Death_9
+      213: -5332772850423390575
+    second: noBKG_KnightRun_strip_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -166,221 +160,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Death_0
+      name: noBKG_KnightRun_strip_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 0
+        x: 41
+        y: 19
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a384cd9ea8e6d6040800000000000000
+      internalID: 4642488333796919354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRun_strip_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 19
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430b755368090e600800000000000000
+      internalID: 495554865105711156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRun_strip_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 19
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26508ebbf11c3320800000000000000
+      internalID: 2538924062860662314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRun_strip_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 19
         width: 32
-        height: 40
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe2a68cb80620dba0800000000000000
-      internalID: -6066306879103524113
+      spriteID: d4f2b2e15d037e270800000000000000
+      internalID: 8279640131836260173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_1
+      name: noBKG_KnightRun_strip_4
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1
+        x: 425
+        y: 19
         width: 31
-        height: 40
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5d41330a0bcf62e0800000000000000
-      internalID: -2130260854859281059
+      spriteID: d0b299bcbf69a9870800000000000000
+      internalID: 8690424439161563917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_2
+      name: noBKG_KnightRun_strip_5
       rect:
         serializedVersion: 2
-        x: 264
-        y: 5
-        width: 34
-        height: 40
+        x: 523
+        y: 19
+        width: 27
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb1ab1dca14689b80800000000000000
-      internalID: -8387844239704481345
+      spriteID: 525198eb8d7628120800000000000000
+      internalID: 2414606530831258917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_3
+      name: noBKG_KnightRun_strip_6
       rect:
         serializedVersion: 2
-        x: 378
-        y: 6
-        width: 37
-        height: 40
+        x: 617
+        y: 19
+        width: 27
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e5b1f726011502b0800000000000000
-      internalID: -5619066241937197591
+      spriteID: 1dcf09658af512190800000000000000
+      internalID: -7988999087367062319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_4
+      name: noBKG_KnightRun_strip_7
       rect:
         serializedVersion: 2
-        x: 492
-        y: 0
-        width: 40
-        height: 40
+        x: 712
+        y: 19
+        width: 27
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c20502be513dc7d0800000000000000
-      internalID: -2896604702546001214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Death_5
-      rect:
-        serializedVersion: 2
-        x: 612
-        y: 0
-        width: 39
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fd7fcec5aa307db0800000000000000
-      internalID: -4796269119335858697
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Death_6
-      rect:
-        serializedVersion: 2
-        x: 732
-        y: 0
-        width: 39
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e8d7f8d2aa6c31350800000000000000
-      internalID: 5986346763916639630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Death_7
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 0
-        width: 41
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2905d9c5881330820800000000000000
-      internalID: 2883202648186376338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Death_8
-      rect:
-        serializedVersion: 2
-        x: 972
-        y: 0
-        width: 43
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3775c8e8960d756f0800000000000000
-      internalID: -695858465623746701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: _Death_9
-      rect:
-        serializedVersion: 2
-        x: 1092
-        y: 0
-        width: 43
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84478638eb5541560800000000000000
-      internalID: 7283540774101742664
+      spriteID: 19e9aa6c85f2ef5b0800000000000000
+      internalID: -5332772850423390575
       vertices: []
       indices: 
       edges: []
@@ -389,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a651420c4728e4537b478f263f7e98c4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -399,16 +349,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      _Death_0: -6066306879103524113
-      _Death_1: -2130260854859281059
-      _Death_2: -8387844239704481345
-      _Death_3: -5619066241937197591
-      _Death_4: -2896604702546001214
-      _Death_5: -4796269119335858697
-      _Death_6: 5986346763916639630
-      _Death_7: 2883202648186376338
-      _Death_8: -695858465623746701
-      _Death_9: 7283540774101742664
+      noBKG_KnightRun_strip_0: 4642488333796919354
+      noBKG_KnightRun_strip_1: 495554865105711156
+      noBKG_KnightRun_strip_2: 2538924062860662314
+      noBKG_KnightRun_strip_3: 8279640131836260173
+      noBKG_KnightRun_strip_4: 8690424439161563917
+      noBKG_KnightRun_strip_5: 2414606530831258917
+      noBKG_KnightRun_strip_6: -7988999087367062319
+      noBKG_KnightRun_strip_7: -5332772850423390575
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

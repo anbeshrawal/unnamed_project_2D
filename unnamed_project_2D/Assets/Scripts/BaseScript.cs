@@ -13,6 +13,7 @@ public class BaseScript : MonoBehaviour
     [SerializeField]protected float groundDistance;
     [SerializeField]protected LayerMask whatisGround;
     [SerializeField] protected bool isGrounded;
+    [SerializeField] protected int health;
 
 
 

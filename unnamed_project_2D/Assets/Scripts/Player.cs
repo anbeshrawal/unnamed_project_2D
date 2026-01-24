@@ -249,9 +249,8 @@ private void Flip()
         canmove = false;
         if (Input.GetKeyDown(KeyCode.Mouse0) && isGrounded)
         {
-            pAnimator.SetTrigger("attack1");
-            
-            
+            //comboSystem.AttemptAttack();
+            pAnimator.SetTrigger("attack1");   
         }
         else
         {

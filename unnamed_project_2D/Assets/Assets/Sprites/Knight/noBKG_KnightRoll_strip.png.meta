@@ -1,37 +1,52 @@
 fileFormatVersion: 2
-guid: 774e0e36a7f1e4e87b9345b4b7957eaa
+guid: 16cf287e4e4134080bdce978680de336
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6066306879103524113
-    second: _Death_0
+      213: 4506777792419722441
+    second: noBKG_KnightRoll_strip_0
   - first:
-      213: -2130260854859281059
-    second: _Death_1
+      213: 8532875479038400191
+    second: noBKG_KnightRoll_strip_1
   - first:
-      213: -8387844239704481345
-    second: _Death_2
+      213: 2981369091936592250
+    second: noBKG_KnightRoll_strip_2
   - first:
-      213: -5619066241937197591
-    second: _Death_3
+      213: 3305275379054264596
+    second: noBKG_KnightRoll_strip_3
   - first:
-      213: -2896604702546001214
-    second: _Death_4
+      213: 2783815152247798542
+    second: noBKG_KnightRoll_strip_4
   - first:
-      213: -4796269119335858697
-    second: _Death_5
+      213: 8152189275207067990
+    second: noBKG_KnightRoll_strip_5
   - first:
-      213: 5986346763916639630
-    second: _Death_6
+      213: 3766272383136301110
+    second: noBKG_KnightRoll_strip_6
   - first:
-      213: 2883202648186376338
-    second: _Death_7
+      213: 3238478497674993634
+    second: noBKG_KnightRoll_strip_7
   - first:
-      213: -695858465623746701
-    second: _Death_8
+      213: -934129196187992631
+    second: noBKG_KnightRoll_strip_8
   - first:
-      213: 7283540774101742664
-    second: _Death_9
+      213: -1373237099614559641
+    second: noBKG_KnightRoll_strip_9
+  - first:
+      213: -7895171534871642881
+    second: noBKG_KnightRoll_strip_10
+  - first:
+      213: 1764861174618173453
+    second: noBKG_KnightRoll_strip_11
+  - first:
+      213: -7964737926850929391
+    second: noBKG_KnightRoll_strip_12
+  - first:
+      213: 8826923715950256829
+    second: noBKG_KnightRoll_strip_13
+  - first:
+      213: 851722952711724572
+    second: noBKG_KnightRoll_strip_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -166,221 +181,331 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Death_0
+      name: noBKG_KnightRoll_strip_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 0
-        width: 32
-        height: 40
+        x: 54
+        y: 19
+        width: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe2a68cb80620dba0800000000000000
-      internalID: -6066306879103524113
+      spriteID: 9c4fbc6368a4b8e30800000000000000
+      internalID: 4506777792419722441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_1
+      name: noBKG_KnightRoll_strip_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1
-        width: 31
-        height: 40
+        x: 235
+        y: 19
+        width: 24
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5d41330a0bcf62e0800000000000000
-      internalID: -2130260854859281059
+      spriteID: fb699b00a0dda6670800000000000000
+      internalID: 8532875479038400191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_2
+      name: noBKG_KnightRoll_strip_2
       rect:
         serializedVersion: 2
-        x: 264
-        y: 5
-        width: 34
-        height: 40
+        x: 420
+        y: 19
+        width: 25
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb1ab1dca14689b80800000000000000
-      internalID: -8387844239704481345
+      spriteID: a71a535a463ff5920800000000000000
+      internalID: 2981369091936592250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_3
+      name: noBKG_KnightRoll_strip_3
       rect:
         serializedVersion: 2
-        x: 378
-        y: 6
-        width: 37
-        height: 40
+        x: 601
+        y: 19
+        width: 28
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e5b1f726011502b0800000000000000
-      internalID: -5619066241937197591
+      spriteID: 411cf55f172bedd20800000000000000
+      internalID: 3305275379054264596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_4
+      name: noBKG_KnightRoll_strip_4
       rect:
         serializedVersion: 2
-        x: 492
-        y: 0
-        width: 40
-        height: 40
+        x: 784
+        y: 20
+        width: 28
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c20502be513dc7d0800000000000000
-      internalID: -2896604702546001214
+      spriteID: e0b7416b12912a620800000000000000
+      internalID: 2783815152247798542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_5
+      name: noBKG_KnightRoll_strip_5
       rect:
         serializedVersion: 2
-        x: 612
-        y: 0
-        width: 39
-        height: 40
+        x: 983
+        y: 19
+        width: 19
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fd7fcec5aa307db0800000000000000
-      internalID: -4796269119335858697
+      spriteID: 659677224f4622170800000000000000
+      internalID: 8152189275207067990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_6
+      name: noBKG_KnightRoll_strip_6
       rect:
         serializedVersion: 2
-        x: 732
-        y: 0
-        width: 39
-        height: 40
+        x: 1179
+        y: 19
+        width: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8d7f8d2aa6c31350800000000000000
-      internalID: 5986346763916639630
+      spriteID: 630043427cc744430800000000000000
+      internalID: 3766272383136301110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_7
+      name: noBKG_KnightRoll_strip_7
       rect:
         serializedVersion: 2
-        x: 852
-        y: 0
-        width: 41
-        height: 40
+        x: 1374
+        y: 19
+        width: 24
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2905d9c5881330820800000000000000
-      internalID: 2883202648186376338
+      spriteID: 2ef98a2190361fc20800000000000000
+      internalID: 3238478497674993634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_8
+      name: noBKG_KnightRoll_strip_8
       rect:
         serializedVersion: 2
-        x: 972
-        y: 0
-        width: 43
-        height: 40
+        x: 1563
+        y: 19
+        width: 22
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3775c8e8960d756f0800000000000000
-      internalID: -695858465623746701
+      spriteID: 9cdb4eef17e4903f0800000000000000
+      internalID: -934129196187992631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Death_9
+      name: noBKG_KnightRoll_strip_9
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 0
-        width: 43
-        height: 14
+        x: 1750
+        y: 19
+        width: 24
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 84478638eb5541560800000000000000
-      internalID: 7283540774101742664
+      spriteID: 7622615322841fce0800000000000000
+      internalID: -1373237099614559641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRoll_strip_10
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 19
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc3337c157be6290800000000000000
+      internalID: -7895171534871642881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRoll_strip_11
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 19
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00befe33eb0e7810800000000000000
+      internalID: 1764861174618173453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRoll_strip_12
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 19
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d18f4fd01977190800000000000000
+      internalID: -7964737926850929391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRoll_strip_13
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 19
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2afa44a588f7a70800000000000000
+      internalID: 8826923715950256829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: noBKG_KnightRoll_strip_14
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 19
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1edd6b438de1db00800000000000000
+      internalID: 851722952711724572
       vertices: []
       indices: 
       edges: []
@@ -389,7 +514,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a651420c4728e4537b478f263f7e98c4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -399,16 +524,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      _Death_0: -6066306879103524113
-      _Death_1: -2130260854859281059
-      _Death_2: -8387844239704481345
-      _Death_3: -5619066241937197591
-      _Death_4: -2896604702546001214
-      _Death_5: -4796269119335858697
-      _Death_6: 5986346763916639630
-      _Death_7: 2883202648186376338
-      _Death_8: -695858465623746701
-      _Death_9: 7283540774101742664
+      noBKG_KnightRoll_strip_0: 4506777792419722441
+      noBKG_KnightRoll_strip_1: 8532875479038400191
+      noBKG_KnightRoll_strip_10: -7895171534871642881
+      noBKG_KnightRoll_strip_11: 1764861174618173453
+      noBKG_KnightRoll_strip_12: -7964737926850929391
+      noBKG_KnightRoll_strip_13: 8826923715950256829
+      noBKG_KnightRoll_strip_14: 851722952711724572
+      noBKG_KnightRoll_strip_2: 2981369091936592250
+      noBKG_KnightRoll_strip_3: 3305275379054264596
+      noBKG_KnightRoll_strip_4: 2783815152247798542
+      noBKG_KnightRoll_strip_5: 8152189275207067990
+      noBKG_KnightRoll_strip_6: 3766272383136301110
+      noBKG_KnightRoll_strip_7: 3238478497674993634
+      noBKG_KnightRoll_strip_8: -934129196187992631
+      noBKG_KnightRoll_strip_9: -1373237099614559641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
