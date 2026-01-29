@@ -20,7 +20,10 @@ private float cooldownTimer = Mathf.Infinity;
 [SerializeField] private int charDirection;
 [SerializeField] private bool outofRange = true;
 
-private bool attacking = false;
+
+    private Vector3 originalPositions;
+    private bool returiningToOrigin = false;
+    private bool attacking = false;
 
 public GameObject PA;
 public GameObject PB; 
@@ -36,14 +39,25 @@ private Rigidbody2D rb;
         rb = GetComponent<Rigidbody2D>();
         target = PB.transform;
         spawn = PB.transform;
+        originalPositions = transform.position;
     }
 
     private void Update()
     {
     cooldownTimer += Time.deltaTime;
     directionCheck();
-    DetectEnemy();
-    PatrolCheck();
+        DetectEnemy();
+
+        if (returiningToOrigin)
+        {
+            ReturnToOrigin();
+        }
+        
+        else
+        {
+             PatrolCheck();
+        }
+   
     }
     
 
@@ -112,54 +126,68 @@ private Rigidbody2D rb;
             Debug.Log("Player Damaged");
         }
 
-        private void PatrolCheck()
+ private void PatrolCheck()
+    {
+        Debug.Log("Patrol Check");
+        if(anim.GetBool("EnemySpotted") == false && attacking == false)
         {
-            Debug.Log("Patrol Check");
-            //Vector2 P = CurrentPoint.position - transform.position;
-            if(anim.GetBool("EnemySpotted") == false && attacking == false)
+            float dist = transform.position.x - target.position.x;
+
+            if (MathF.Abs(dist) < 0.2f)
             {
-                float dist = transform.position.x - target.position.x;
-            
-            if(Mathf.Abs(dist) <= 0.2f)
-            {
-            if(target == PB.transform)
-            {
-                target = PA.transform;
-                movetoTarget();
+                if (target == PB.transform)
+                {
+                    target = PA.transform;
+                    movetoTarget();
+                }
+
+                else if (target == PA.transform)
+                {
+                    target = PB.transform;
+                    movetoTarget();
+                }
             }
-            else if(target == PA.transform)
-            {
-                target = PB.transform;
-                movetoTarget();
-            } 
-            }
-            else if(Mathf.Abs(dist) > 0.2f && Mathf.Abs(dist) < 6f)
+
+            else if (MathF.Abs(dist) > 0.2f && MathF.Abs(dist) < 6f)
             {
                 Debug.Log(dist);
                 movetoTarget();
             }
-            else if(Mathf.Abs(dist) >= 6f)
+            else if (MathF.Abs(dist) >=6f)
             {
-                Debug.Log("Out of Range - Resetting Position");
-                if(outofRange  ==  true && target == PA.transform)
-                {
-                    Debug.Log(dist);
-                    anim.SetBool("Patroling", false);
-                    rb.linearVelocity = new Vector2(0, 0);
-                    Invoke("RangeCheck", 1.5f);
+                Debug.Log("Out of range - Returning Back to original Position");
+                    if(outofRange == true)
+                    {
+                        returiningToOrigin = true;
+                        anim.SetBool("Patroling", true);
+                    }
                 }
-                else if(outofRange  ==  true && target == PB.transform)
-                {
-                    Debug.Log(dist);
-                    anim.SetBool("Patroling", false);
-                    rb.linearVelocity = new Vector2(0, 0);
-                    Invoke("RangeCheck", 1.5f);
             }
         }
+    
+        
+private void ReturnToOrigin()
+    {
+        float step = speed * Time.deltaTime;
+        transform.position = Vector2.MoveTowards(transform.position, originalPositions, step);
+
+        if (originalPositions.x < transform.position.x)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
         }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
         }
 
 
+        if(Vector2.Distance(transform.position, originalPositions) <0.1f)
+        {
+            returiningToOrigin = false;
+            anim.SetBool("Patroling", false);
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
     private void movetoTarget()
     {
         if(target == PA.transform)
