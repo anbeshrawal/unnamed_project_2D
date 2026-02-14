@@ -14,7 +14,7 @@ private float cooldownTimer = Mathf.Infinity;
 [SerializeField] private float attackrange;
 [SerializeField] private float ColDist;
 [SerializeField] private float speed;
-[SerializeField] private LayerMask playerLayer;
+[SerializeField] private LayerMask playerLayer = 1 << 3; // Assuming Player is on layer 3
 [SerializeField] private int damage;
 [SerializeField] private Transform Eyesight;
 [SerializeField] private int charDirection;
